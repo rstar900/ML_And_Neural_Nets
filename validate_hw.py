@@ -118,3 +118,7 @@ if __name__ == "__main__":
     print("Inference Time :  %s seconds" % (end_time))
     acc = 100.0 * ok / (total)
     print("Final accuracy: %f" % acc)
+    
+    # run throughput test
+    print("---")
+    print(driver.throughput_test())
