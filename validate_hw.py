@@ -33,6 +33,7 @@ import numpy as np
 from driver import io_shape_dict
 from driver_base import FINNExampleOverlay
 import time
+import pprint
 
 
 if __name__ == "__main__":
@@ -121,4 +122,5 @@ if __name__ == "__main__":
     
     # run throughput test
     print("---")
-    print(driver.throughput_test())
+    throughput_result = driver.throughput_test()
+    pprint.pprint(throughput_result)
